@@ -1,0 +1,154 @@
+Site: https://www.expedia.com/
+
+1. Поиск маршрута с датой из прошлого и/или  из будущего (более 12 месяцев)
+Шаги: 1. зайти на главную страницу;  
+      2. попытаться выбрать день прошлого месяца(например, 01/01/1970) в поле Out.
+
+Шаги: 1. зайти на главную страницу; 
+      2. для Returning выбрать день более чем на 12 месяцев в будущем(например, 01/01/2021);
+
+Ожидаемый результат: 		Please correct the errors below.
+				// Dates must be between 10/10/2019 and 9/4/2020.
+				// The date must be 10/10/2019 or after.
+
+
+
+2. Поиск возможного маршрута без ввода станции отправления
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать куда и откуда осуществляется, а именно заполнить формы:
+         a. Flying to: Gold Coast, QLD, Australia (OOL-Coolangatta),
+         c. Travelers: (1 Adult),
+         e. Flying from: None; 
+      3	 Выбрать Departing: 09/25/2019;
+      4. нажать Search.
+
+Ожидаемый результат: 		Please correct the errors below.
+				// Tell us where you're flying from.
+
+
+2. Поиск возможного маршрута без ввода станции прибытия
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать куда и откуда осуществляется перелёт, а именно заполнить формы:
+         a. Flying from: Minsk, Belarus (MSQ-All Airports);
+         b. Passengers: 1 Adult;
+         c. Flying from: None; 
+      3. Выбрать Departing: 09/25/2019;
+      4. нажать Search.
+
+Ожидаемый результат: 		Please correct the errors below.
+				// Tell us where you're flying to
+
+3. Бранирование более 6 билетов
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать куда и откуда  осуществляется перелёт, а именно заполнить формы:
+         a. Flying to: Sydney, NSW, Australia (SYD-All Airports);       
+         b. Flying from: Gold Coast, QLD, Australia (OOL-Coolangatta);
+         c. заполнить Travelers так, чтобы было более 6 человек (6 Adult + 3 Infrants).
+      3. Выбрать Departing: 09/25/2019;
+      4. нажать Search.
+Ожидаемый результат: 		Please correct the errors below.
+				// We are only able to book between 1 and 6 travelers. Please adjust the number of travelers for your search.
+
+4. Бранирование билетов для взрослых и детей (не указав возраст детей)
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать куда и откуда  осуществляется перелёт, а именно заполнить формы:
+         a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+         b. Flying from Gold Coast, QLD, Australia (OOL-Coolangatta);
+         c. заполнить Travelers так, чтобы было 1 Adult + 1 Children;
+	 d. Child Age: None;
+      3. Выбрать Departing: 09/25/2019;
+      4. нажать Search.
+
+Ожидаемый результат: 		Please correct the errors below.
+				// Please provide the ages of children below.
+
+5. Бранирование более 1 билета Infants с 1 Adult
+Шаги: 1. Зайти на главную страницу; 
+      2. Выбрать куда и откуда осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+         a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+         b. Flying from Gold Coast, QLD, Australia (OOL-Coolangatta);
+         c. заполнить Travelers так, чтобы было 1 Adult + 2 Infrants.
+      3. Выбрать Departing: 09/25/2019
+      4. Нажать Search.
+
+Ожидаемый результат:		Please correct the errors below.
+                    		// Each infant in lap must be accompanied by a traveler age 12 or older.
+
+
+6. Поиск билета без указания даты отправления
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать куда и откуда  осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+         a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+         b. Flying from Sydney, NSW, Australia (SYD-All Airports);
+         c. заполнить Travelers так, чтобы было 1 Adult + 2 Infrants.
+      3. Departing: none;
+      4. нажать Search.
+
+Ожидаемый результат:		Please correct the errors below.
+				// Enter your departure date in this format: mm/dd/yyyy.
+
+7. Ввод одинакового пункта отправления и прибытия.
+
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать город куда и откуда осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+         a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+         b. Flying from Sydney, NSW, Australia (SYD-All Airports);
+      3. Departing: 09/25/2019;
+      4. нажать Search.
+
+Ожидаемый результат:		Please correct the errors below.
+   				// Please choose a different destination from origin.
+
+
+8. I'm Lazy :)
+
+Шаги: 1. зайти на главную страницу; 
+      4. нажать Search.
+
+Ожидаемый результат: 		 Please correct the errors below.
+				 // Tell us where you're flying from.
+				 // Tell us where you're flying to.
+				 // Enter your departure date in this format: mm/dd/yyyy.
+
+9. Регистрация пользователя: неправильное заполнение формы.
+
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать в верхнем меню Account -> Register
+      3. заполнить форму регистрации:
+         a. First name : Daniil123;     
+         b. Second name : Marchuk123;
+         c. Email: neiil.white220@gmail.com
+	 d. Password: 65748393945743;     
+      4. Нажать Register;
+
+Ожидаемый результат: 	-First name
+			 Daniil123
+			-Please enter first name using letters only
+
+			-Last name
+			 Marchuk
+			-Please enter last name using letters only(minimum 2 characters)
+
+
+9. Регистрация пользователя: легкий пароль.
+
+Шаги: 1. зайти на главную страницу; 
+      2. выбрать в верхнем меню Account -> Register
+      3. заполнить форму регистрации:
+         a. First name : Daniil;     
+         b. Second name : Marchuk;
+         c. Email: neiil.white220@gmail.com
+	 d. Password: 123123;     
+      4. Нажать Register;
+
+Ожидаемый результат: 	// Password is a commonly used password. Please choose a different password.
+
+
+         
+    
+
+
+
+ 
+
+
