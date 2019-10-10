@@ -79,7 +79,7 @@ Site: https://www.expedia.com/
 Шаги: 1. зайти на главную страницу; 
       2. выбрать куда и откуда  осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
          a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
-         b. Flying from Sydney, NSW, Australia (SYD-All Airports);
+         b. Flying from Gold Coast, QLD, Australia (OOL-Coolangatta);
          c. заполнить Travelers так, чтобы было 1 Adult + 2 Infrants.
       3. Departing: none;
       4. нажать Search.
@@ -100,16 +100,26 @@ Site: https://www.expedia.com/
    				// Please choose a different destination from origin.
 
 
-8. I'm Lazy :)
+8. Проверка сохранения выбранных данных при бронировании билета
 
-Шаги: 1. зайти на главную страницу; 
-      4. нажать Search.
+Шаги:   1. зайти на главную страницу; 
+        2. выбрать город куда и откуда осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+           a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+           b. Flying from Gold Coast, QLD, Australia (OOL-Coolangatta);
+        3. Departing: 09/25/2019;
+        4. Выбрать количество пассажиров Travelers: 1 Adult;
+	5. нажать Search;
+	6. В представленном списке выбрать подходищий билет и нажать Select;
+	7. В сплывающем окне отказаться от заказа отеля: выбрать No thanks;
+	8. Проверить выбранный билет на валидность.
 
-Ожидаемый результат: 		 Please correct the errors below.
-				 // Tell us where you're flying from.
-				 // Tell us where you're flying to.
-				 // Enter your departure date in this format: mm/dd/yyyy.
-
+Ожидаемый результат: 		Review your trip
+				
+				-- Flight Summary -- 
+			       	   Fri, Oct 11
+				   From: Kingsford Smith Intl. (SYD) 7:15pm SYD
+				   To: Coolangatta (OOL) 7:35pm OOL
+				
 9. Регистрация пользователя: неправильное заполнение формы.
 
 Шаги: 1. зайти на главную страницу; 
@@ -143,6 +153,39 @@ Site: https://www.expedia.com/
 
 Ожидаемый результат: 	// Password is a commonly used password. Please choose a different password.
 
+10. Проверить работу сортировки билетов по цене и времени отправления.
+
+Шаги:   1. зайти на главную страницу; 
+        2. выбрать город куда и откуда осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+           a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+           b. Flying from Sydney, NSW, Australia (SYD-All Airports);
+        3. Departing: 09/25/2019;
+        4. Выбрать количество пассажиров Travelers: 1 Adult;
+	5. нажать Search;
+	6. Выбрать в параметрах сортировки Sort by: Price(lowest);
+	7. Нажать на чекбокс Departure Time: morning(5am - 11.59am)
+	
+
+Ожидаемый результат: Список билетов автоматически обновится и билеты будут отсортированны по возрастанию цены и время отправления будет в промежутке от 5 am до 11.59 am.
+
+11. Выбор параметров сортировки которые не соответствуют не одному из предложенных билетов
+
+
+Шаги:   1. зайти на главную страницу; 
+        2. выбрать город куда и откуда осуществляется перелёт Sydney, NSW, Australia (SYD-All Airports), а именно заполнить формы:
+           a. Flying to Sydney, NSW, Australia (SYD-All Airports);       
+           b. Flying from Sydney, NSW, Australia (SYD-All Airports);
+        3. Departing: 09/25/2019;
+        4. Выбрать количество пассажиров Travelers: 1 Adult;
+	5. нажать Search;
+	6. Выбрать в параметрах сортировки Sort by: Price(lowest);
+	7. Выбрать чекбокс Departure Time: morning(5am - 11.59am);
+	8. Выбрать чекбокс Arrival Time: Evening(5pm - 11.59am);
+	9. Выбрать чекбокс Stops: Nonstop;
+
+Ожидаемый результат: 	Так как время перелета от Sydney до Gold Coast не превышает 2 часов и выбран чекбокс "Без остановок", то список билетов будет пуст
+		        //There are no flights that match your search criteria.
+		        //Please change the selected filters and try your search again
 
          
     
