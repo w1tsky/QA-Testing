@@ -1,0 +1,7 @@
+D:\GitHub\Triangle\Triangle\bin\Debug\netstandard2.0\Triangle.deps.json
+D:\GitHub\Triangle\Triangle\bin\Debug\netstandard2.0\Triangle.dll
+D:\GitHub\Triangle\Triangle\bin\Debug\netstandard2.0\Triangle.pdb
+D:\GitHub\Triangle\Triangle\obj\Debug\netstandard2.0\Triangle.AssemblyInfoInputs.cache
+D:\GitHub\Triangle\Triangle\obj\Debug\netstandard2.0\Triangle.AssemblyInfo.cs
+D:\GitHub\Triangle\Triangle\obj\Debug\netstandard2.0\Triangle.dll
+D:\GitHub\Triangle\Triangle\obj\Debug\netstandard2.0\Triangle.pdb

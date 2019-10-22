@@ -122,14 +122,14 @@ Site: https://www.expedia.com/
 				
 9. Регистрация пользователя: неправильное заполнение формы.
 
-Шаги: 1. зайти на главную страницу; 
-      2. выбрать в верхнем меню Account -> Register
-      3. заполнить форму регистрации:
-         a. First name : Daniil123;     
-         b. Second name : Marchuk123;
-         c. Email: neiil.white220@gmail.com
-	 d. Password: 65748393945743;     
-      4. Нажать Register;
+Шаги:	1. зайти на главную страницу; 
+        2. выбрать в верхнем меню Account -> Register
+        3. заполнить форму регистрации:
+           a. First name : Daniil123;     
+           b. Second name : Marchuk123;
+           c. Email: neiil.white220@gmail.com
+	   d. Password: 65748393945743;     
+        4. Нажать Register;
 
 Ожидаемый результат: 	-First name
 			 Daniil123
@@ -142,14 +142,14 @@ Site: https://www.expedia.com/
 
 9. Регистрация пользователя: легкий пароль.
 
-Шаги: 1. зайти на главную страницу; 
-      2. выбрать в верхнем меню Account -> Register
-      3. заполнить форму регистрации:
-         a. First name : Daniil;     
-         b. Second name : Marchuk;
-         c. Email: neiil.white220@gmail.com
-	 d. Password: 123123;     
-      4. Нажать Register;
+Шаги:	1. зайти на главную страницу; 
+        2. выбрать в верхнем меню Account -> Register
+        3. заполнить форму регистрации:
+           a. First name : Daniil;     
+           b. Second name : Marchuk;
+           c. Email: neiil.white220@gmail.com
+	   d. Password: 123123;     
+        4. Нажать Register;
 
 Ожидаемый результат: 	// Password is a commonly used password. Please choose a different password.
 
@@ -168,7 +168,7 @@ Site: https://www.expedia.com/
 
 Ожидаемый результат: Список билетов автоматически обновится и билеты будут отсортированны по возрастанию цены и время отправления будет в промежутке от 5 am до 11.59 am.
 
-11. Выбор параметров сортировки которые не соответствуют не одному из предложенных билетов
+11. Выбор параметров сортировки которые не соответствуют не одному из возможных билетов
 
 
 Шаги:   1. зайти на главную страницу; 
