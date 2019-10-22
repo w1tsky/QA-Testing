@@ -19,7 +19,7 @@ Site: https://www.expedia.com/
          a. Flying to: Gold Coast, QLD, Australia (OOL-Coolangatta),
          c. Travelers: (1 Adult),
          e. Flying from: None; 
-      3	 Выбрать Departing: 09/25/2019;
+      3	 Выбрать Departing: Сегодня;
       4. нажать Search.
 
 Ожидаемый результат: 		Please correct the errors below.
