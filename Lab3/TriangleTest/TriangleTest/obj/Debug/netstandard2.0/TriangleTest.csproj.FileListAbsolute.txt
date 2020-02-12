@@ -1,3 +1,0 @@
-D:\GitHub\TriangleTest\TriangleTest\obj\Debug\netstandard2.0\TriangleTest.csprojAssemblyReference.cache
-D:\GitHub\TriangleTest\TriangleTest\obj\Debug\netstandard2.0\TriangleTest.AssemblyInfoInputs.cache
-D:\GitHub\TriangleTest\TriangleTest\obj\Debug\netstandard2.0\TriangleTest.AssemblyInfo.cs
