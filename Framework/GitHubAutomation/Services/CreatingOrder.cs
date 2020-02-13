@@ -6,14 +6,14 @@ namespace GitHubAutomation.Services
 {
     class CreatingOrder
     {
-       public static Location PickUpFields()
+       public static Order PickUpFields()
        {
-            return new Location(TestDataReader.GetTestData("PickUpCountry"), TestDataReader.GetTestData("PickUpCity"), TestDataReader.GetTestData("PickUpPlace"));
+            return new Order(TestDataReader.GetTestData("PickUpCountry"), TestDataReader.GetTestData("PickUpCity"), TestDataReader.GetTestData("PickUpPlace"));
        }
 
-        public static Location ReturnFields()
+        public static Order ReturnFields()
         {
-            return new Location(TestDataReader.GetTestData("ReturnCountry"), TestDataReader.GetTestData("ReturnCity"), TestDataReader.GetTestData("ReturnPlace"));
+            return new Order(TestDataReader.GetTestData("ReturnCountry"), TestDataReader.GetTestData("ReturnCity"), TestDataReader.GetTestData("ReturnPlace"));
         }
     }
 }

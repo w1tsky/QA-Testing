@@ -19,7 +19,7 @@ namespace GitHubAutomation.Tests
         public void SetDriver()
         {
             Driver = DriverSingleton.GetDriver();
-            Driver.Navigate().GoToUrl("https://www.autoeurope.ru/");
+            Driver.Navigate().GoToUrl("https://www.expedia.com/");
         }
 
         protected void TakeScreenshotWhenTestFailed(Action action)
