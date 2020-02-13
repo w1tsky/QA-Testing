@@ -100,7 +100,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">
-    <Copy SourceFiles="$(ProjectDir)DriverBinaries\geckodriver.exe" DestinationFolder="$(TargetDir)" ContinueOnError="true" />
+    <Copy SourceFiles="$(ProjectDir)bin\Debug\geckodriver.exe" DestinationFolder="$(TargetDir)" ContinueOnError="true" />
   </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
