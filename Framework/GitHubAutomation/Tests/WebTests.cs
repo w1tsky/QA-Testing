@@ -16,19 +16,18 @@ namespace GitHubAutomation.Tests
     [TestFixture]
     public class WebTests : GeneralConfig
     {
-        //[Test]
-        //public void CheckAge()
-        //{
-        //    TakeScreenshotWhenTestFailed(() =>
-        //    {
-        //        MainPage mainPage = new MainPage(Driver)
-        //            .FillInPickUpFields(CreatingOrder.PickUpFields())
-        //            .clickOnAgeCheckBox()
-        //            .SubmitInformation();
-
-        //        Assert.AreEqual("ВОЗРАСТ ВОДИТЕЛЯ", mainPage.errorMessage);
-        //    });
-        //}
+        [Test]
+        public void CheckAge()
+        {
+            TakeScreenshotWhenTestFailed(() =>
+            {
+                MainPage mainPage = new MainPage(Driver)
+                    .InsertOrderValue(CreatingOrder.WithOrderProperties())
+                    .AddChildren()
+                    .SubmitInformation();
+                Assert.AreEqual("Please provide the ages of children below.", mainPage.errorMessage);
+            });
+        }
 
         //[Test]
         //public void RentCarWithEmptyReturnFields()
@@ -82,7 +81,7 @@ namespace GitHubAutomation.Tests
         //        Assert.AreEqual("НЕ КОРРЕКТНЫЙ ВОЗРАСТ", mainPage.errorMessage);
         //    });
         //}
-        
+
         [Test]
         public void LogInWithEmptyFields()
         {
@@ -139,19 +138,6 @@ namespace GitHubAutomation.Tests
             });
         }
 
-        [Test]
-        public void LogInWithIncorrectPassword()
-        {
-            TakeScreenshotWhenTestFailed(() =>
-            {
-                MainPage mainPage = new MainPage(Driver)
-                    .ClickOnAccountBtn()
-                    .ClickOnSignInBtn()
-                    .InsertValueInEmailInput(CreatingUser.TestUser().Email)
-                    .InsertValueInPasswordInput(CreatingUser.IncorrectUser().Email)
-                    .ClickOnSubmitLogInBtn();
-                Assert.AreEqual("You may have entered an unknown email address or an incorrect password", mainPage.signInErrorMessage);
-            });
-        }
+       
     }
 }

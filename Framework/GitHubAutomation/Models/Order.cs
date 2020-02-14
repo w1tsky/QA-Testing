@@ -6,15 +6,17 @@ namespace GitHubAutomation.Models
 {
     public class Order
     {
-        public string Country { get; set; }
-        public string City { get; set; }
-        public string Place { get; set; }
+        public string Origin { get; set; }
+        public string Destination { get; set; }
+        public string DepartingTime { get; set; }
+        public string ReturningTime { get; set; }
 
-        public Order(string pickUpCountry, string pickUpCity, string pickUpPlace)
+        public Order(string origin, string destination, string departingTime, string returningTime)
         {
-            Country = pickUpCountry;
-            City = pickUpCity;
-            Place = pickUpPlace;
+            Origin = origin;
+            Destination = destination;
+            DepartingTime = departingTime;
+            ReturningTime = returningTime;
         }
     }
 }
