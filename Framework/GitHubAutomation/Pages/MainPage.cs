@@ -40,9 +40,9 @@ namespace GitHubAutomation.Pages
 
         public MainPage AddChildren()
         {
-            Wait(driver, 3, By.XPath("//*[@id='traveler-selector-hp-package']/div/ul/li/button"));
+            Wait(driver, 5, By.XPath("//*[@id='traveler-selector-hp-package']/div/ul/li/button"));
             travelersCountInput.Click();
-            Wait(driver, 3, By.XPath("//*[@id='traveler-selector-hp-package']/div/ul/li/div/div/div[1]/div[3]/div[1]/div[4]/button"));
+            Wait(driver, 5, By.XPath("//*[@id='traveler-selector-hp-package']/div/ul/li/div/div/div[1]/div[3]/div[1]/div[4]/button"));
             addChildrenBtn.Click();
             return this;
         }
@@ -51,7 +51,7 @@ namespace GitHubAutomation.Pages
 
         public MainPage ClickOnSignInBtn()
         {
-            Wait(driver, 3, By.XPath("//*[@id='account-signin']"));
+            Wait(driver, 5, By.XPath("//*[@id='account-signin']"));
             signInBtn.Click();
             return this;
         }
@@ -61,7 +61,7 @@ namespace GitHubAutomation.Pages
 
         public MainPage InsertValueInEmailInput(string value)
         {
-            Wait(driver, 3, By.XPath("//*[@id='login-form-email-label']"));
+            Wait(driver, 5, By.XPath("//*[@id='login-form-email-label']"));
             emailInput.Click();
             emailInput.SendKeys(value);
             return this;
@@ -69,7 +69,7 @@ namespace GitHubAutomation.Pages
         
         public MainPage InsertValueInPasswordInput(string value)
         {
-            Wait(driver, 3, By.XPath("//*[@id='gss-signin-password']"));
+            Wait(driver, 5, By.XPath("//*[@id='gss-signin-password']"));
             passwordInput.Click();
             passwordInput.SendKeys(value);
             return this;
@@ -78,7 +78,7 @@ namespace GitHubAutomation.Pages
 
         public MainPage ClickOnAccountBtn()
         {
-            Wait(driver, 3, By.XPath("//*[@id='account-menu']"));
+            Wait(driver, 5, By.XPath("//*[@id='account-menu']"));
             accountBtn.Click();
             return this;
         }
